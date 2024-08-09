@@ -81,6 +81,10 @@ nav{
     justify-content: space-between;
 }
 
+nav box-icon{
+    display: none;
+}
+
 nav ul{
     list-style-type: none;
 }
@@ -95,3 +99,34 @@ nav ul li a:hover{
     transition: .5s ease-in-out;
 }
 
+@media only screen and (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav box-icon {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+
+    nav ul{
+        background: rgba( 266, 245, 266, 0.9);
+        display: none;
+    }
+
+    .showmenu{
+        display: block;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li a{
+        color: #222;
+    }
+}
