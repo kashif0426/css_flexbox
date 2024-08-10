@@ -311,9 +311,43 @@ input::placeholder {
   margin: 1.2rem 0 0 0;
   font-family: "Poppins", sans-serif;
 }
+
+/* Footer */
+
+footer {
+  background: linear-gradient(to right, rgb(255, 149, 0), rgb(73, 220, 0));
+  height: 80px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: center;
+  line-height: 80px;
+}
+
 /* Media Queries*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
+
+    .row{
+        flex-direction: column;
+    }
+
+    .about2{
+        display: block;
+    }
+
+    .about2-left{
+        margin: 0 35px;
+    }
+
+  .submit {
+    width: 100%;
+  }
+
+  .text,
+  .email {
+    width: 100%;
+  }
+
   nav {
     flex-direction: column;
     position: relative;
@@ -342,5 +376,36 @@ input::placeholder {
 
   nav ul li a {
     color: #222;
+  }
+
+  /* Header Content */
+
+  .header-content{
+    width: 100%;
+    top: 16%;
+    left: 0;
+    padding: 0 8px;
+    text-align: start;
+  }
+
+  .progress-bar{
+    display: none;
+  }
+
+  .process-content{
+    margin-top: 20px;
+  }
+
+  .process .box{
+    text-align: start;
+  }
+
+  .testimony .test{
+    margin: 1.6rem 0;
+  }
+
+  .contact form input,
+  .contact textarea{
+    width: 100%;
   }
 }
